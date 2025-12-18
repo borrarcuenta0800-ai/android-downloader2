@@ -1,7 +1,4 @@
-name: Fix permissions for Gradle Wrapper
-     run: |
-       chmod +x ./gradlew
-       chmod +x ./gradle/wrapper/gradle-wrapper.jar
+
 
 name: Build Android Project
 
@@ -37,3 +34,8 @@ jobs:
         run: ./gradlew build
         env:
           JAVA_HOME: ${{ env.JAVA_HOME }}
+
+name: Fix permissions for Gradle Wrapper
+     run: |
+       chmod +x ./gradlew
+       chmod +x ./gradle/wrapper/gradle-wrapper.jar
