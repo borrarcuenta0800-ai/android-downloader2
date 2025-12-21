@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace "com.example.downloader"   // 🔴 ESTO ES CLAVE
+    namespace "com.example.downloader"
     compileSdk 34
 
     defaultConfig {
@@ -14,16 +14,10 @@ android {
         versionCode 1
         versionName "1.0"
     }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-        }
-    }
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.0"
+    implementation "com.github.TeamNewPipe:NewPipeExtractor:0.24.4"
     implementation "androidx.core:core-ktx:1.12.0"
     implementation "androidx.appcompat:appcompat:1.6.1"
     implementation "com.google.android.material:material:1.11.0"
